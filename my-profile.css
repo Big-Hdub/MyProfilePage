@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Digital-7";
+    src: url("./resources/digital-7\ \(mono\).ttf") format('truetype');
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 1080px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(./images/Alienware\ lockscreen.jpg);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 225px;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.headerDivs {
+    width: 760px;
+    height: 225px;
+}
+
+#headerMain {
+    display: flex;
+    width: 300px;
+    background-image: url(./images/fam.jpg);
+    background-size: 100% 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 5px solid rgb(10, 10, 131);
+    box-shadow: 3px 2px 5px 2px rgba(255, 0, 0, .3);
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#headerRight {
+    justify-content: left;
+    display: flex;
+    align-items: start;
+}
+
+#bio {
+    margin: 10px;
+    margin-left: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: xx-large;
+    color: crimson;
+    text-shadow: rgb(184, 52, 4) 3px 3px 4px;
+    text-align: left;
+}
+
+#headerRight {
+    display: flex;
+    justify-content: right;
+    align-items: start;
+}
+
+#clock {
+    margin: 10px;
+    margin-right: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: xx-large;
+    color: crimson;
+    text-shadow: rgb(184, 52, 4) 3px 3px 4px;
+    text-align: right;
+}
+
+#hour,
+#minute,
+#second,
+#days {
+    font-family: "Digital-7", sans-serif;
+    font-size: 40px;
+}
+
+h1 {
+    height: 215.67px;
+    margin: 0;
+    color: crimson;
+    text-shadow: rgb(184, 52, 4) 3px 3px 4px;
+    box-sizing: border-box;
+}
+
+#mainBody {
+    width: 100%;
+}
+
+#divMain {
+    display: flex;
+    width: 100%;
+    height: 855px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.listTitles {
+    font-size: x-large;
+    font-weight: bold;
+    color: crimson;
+    text-shadow: rgb(184, 52, 4) 3px 3px 4px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.imageBoxes {
+    display: flex;
+    margin: 0;
+    justify-content: start;
+    color: aqua;
+    text-indent: 20px;
+    width: 300px;
+    height: 225px;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 5px solid rgb(10, 10, 131);
+    box-shadow: 3px 2px 5px 2px rgba(255, 0, 0, .3);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#Sarah {
+    background-image: url(./images/sarah.jpg);
+}
+
+#Leilani {
+    background-image: url(./images/leilani.jpg);
+}
+
+#Harrison {
+    background-image: url(./images/harrison.jpg);
+}
+
+#Kumiko {
+    background-image: url(./images/kumiko.jpg);
+}
+
+#Bruno {
+    background-image: url(./images/bruno.jpg);
+}
+
+#Gizmo {
+    background-image: url(./images/gizmo.jpg);
+}
+
+#Coco {
+    background-image: url(./images/coco.jpg);
+}
+
+#Volleyball {
+    background-image: url(./images/volleyball.jpg);
+}
+
+#Programming {
+    background-image: url(./images/programming.jpg);
+}
