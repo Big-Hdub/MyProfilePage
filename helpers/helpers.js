@@ -98,6 +98,6 @@ export const getWeeks = () => {
     const date = new Date();
     const start = new Date(2023, 8, 18);
     const dif = date - start;
-    const weeks = Math.floor(dif / (1000 * 60 * 60 * 24 * 7));
+    const weeks = Math.floor(dif / (1000 * 60 * 60 * 24 * 7) - 1);
     return weeks;
 }
