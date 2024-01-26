@@ -1,4 +1,4 @@
-import { cEl, getDate, timeTillBday, getAge } from "./helpers/helpers.js"
+import { cEl, getDate, timeTillBday, getAge, getWeeks } from "./helpers/helpers.js"
 
 document.addEventListener("DOMContentLoaded", (event) => {
 
@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const hMid = cEl("div", [["class", "headerDivs"], ["id", "headerMain"]], "");
     const hRight = cEl("div", [["class", "headerDivs"], ["id", "headerRight"]], "");
     header.append(hLeft, hMid, hRight);
-    const bio = cEl("p", [["id", "bio"]], `I am a ${age} year old father of three with a wonderful wife named Sarah.  I have done construction my whole life, and as my body is failing I am seeking a new career that I can pursue.  I am currently 17 weeks into the App Academy program to become a software engineer.`)
+    const weeks = getWeeks();
+    const bio = cEl("p", [["id", "bio"]], `I am a ${age} year old father of three with a wonderful wife named Sarah.  I have done construction my whole life, and as my body is failing I am seeking a new career that I can pursue.  I am currently ${weeks} weeks into the App Academy program to become a software engineer.`)
     hLeft.append(bio)
     const clock = cEl("p", [["id", "clock"]], "")
     hRight.append(clock);
