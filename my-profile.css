@@ -141,6 +141,7 @@ h1 {
     background-image: url(./images/sarah.jpg);
 }
 
+
 #Leilani {
     background-image: url(./images/leilani.jpg);
 }
@@ -173,6 +174,140 @@ h1 {
     background-image: url(./images/programming.jpg);
 }
 
+.imageBoxes2 {
+    position: fixed;
+    background-color: rgb(33, 37, 37);
+    top: 10px;
+    left: 90px;
+    width: 1750px;
+    height: 975px;
+    border-radius: 4px;
+    border: 1px solid blue;
+    background-size: 1200px 800px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 5px solid rgb(10, 10, 131);
+    box-shadow: 3px 2px 5px 2px rgba(255, 0, 0, .3);
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+#SarahHide,
+#LeilaniHide,
+#HarrisonHide,
+#KumikoHide,
+#BrunoHide,
+#GizmoHide,
+#CocoHide,
+#VolleyballHide,
+#ProgrammingHide {
+    display: none;
+}
+
+.Sarah,
+.Leilani,
+.Harrison,
+.Kumiko,
+.Bruno,
+.Gizmo,
+.Coco,
+.Volleyball,
+.Programming {
+    display: flex;
+    font-size: 40px;
+    margin: 0;
+    color: crimson;
+    text-shadow: rgb(184, 52, 4) 3px 3px 4px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid rgb(10, 10, 131);
+    box-shadow: 3px 2px 5px 2px rgba(255, 0, 0, .3);
+    border-radius: 8px;
+}
+
+#Sarah0,
+#Leilani0,
+#Harrison0,
+#Kumiko0,
+#Bruno0,
+#Gizmo0,
+#Coco0,
+#Volleyball0,
+#Programming0 {
+    box-sizing: border-box;
+    background-color: rgb(8, 8, 88);
+    background-image: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 28%;
+    height: 96%;
+    padding: 30px;
+}
+
+#Sarah1,
+#Leilani1,
+#Harrison1,
+#Kumiko1,
+#Bruno1,
+#Gizmo1,
+#Coco1,
+#Volleyball1,
+#Programming1 {
+    background-color: rgb(8, 8, 88);
+    background-image: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 68.5%;
+    height: 12%;
+    box-sizing: border-box;
+}
+
+.Sarah {
+    background-image: url(./images/sarah.jpg);
+}
+
+.Leilani {
+    background-image: url(./images/leilani.jpg);
+
+}
+
+.Harrison {
+    background-image: url(./images/harrison.jpg);
+
+}
+
+.Kumiko {
+    background-image: url(./images/kumiko.jpg);
+
+}
+
+.Bruno {
+    background-image: url(./images/bruno.jpg);
+
+}
+
+.Gizmo {
+    background-image: url(./images/gizmo.jpg);
+
+}
+
+.Coco {
+    background-image: url(./images/coco.jpg);
+
+}
+
+.Volleyball {
+    background-image: url(./images/volleyball.jpg);
+
+}
+
+.Programming {
+    background-image: url(./images/programming.jpg);
+}
+
 .footer {
     margin: 0;
     height: 55px;
@@ -180,4 +315,15 @@ h1 {
     background-color: black;
     border-top: 3px solid rgb(10, 10, 131);
     box-shadow: 0px 0px 5px 3px rgba(255, 0, 0, .3);
+}
+
+#footNav {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footLinks {
+    font-size: 31px;
 }

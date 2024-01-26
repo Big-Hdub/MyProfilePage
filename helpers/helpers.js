@@ -9,6 +9,18 @@ export const cEl = (tag, att, text) => {
     return el;
 };
 
+export const divCreator = (name, text) => {
+    const res = [];
+    for (let i = 0; i < 2; i++) {
+        const p = document.createElement("p");
+        p.setAttribute("class", name);
+        p.setAttribute("id", name + i);
+        if (text[i]) p.innerText = `${text[i]}`;
+        res.push(p);
+    };
+    return res;
+}
+
 const suffix = {
     1: "st",
     2: "nd",
@@ -63,14 +75,14 @@ export const getDate = (date) => {
     let minutes = date.getMinutes();
     let hours = date.getHours();
     let month = date.getMonth();
-    month = months[month]
+    month = months[month];
     let year = date.getFullYear();
     let day = date.getDate();
     day = `${day}${suffix[day]}`;
     if (hours > 12) hours = hours - 12;
     if (minutes < 10) minutes = `0${minutes}`;
     if (seconds < 10) seconds = `0${seconds}`;
-    return `It is ${month} ${day}, ${year} the current time is: <span id="hour">${hours}</span>:<span id="minute">${minutes}</span>:<span id="second">${seconds}</span>`
+    return `It is ${month} ${day}, ${year} the current time is: <span id="hour">${hours}</span>:<span id="minute">${minutes}</span>:<span id="second">${seconds}</span>`;
 }
 
 export const timeTillBday = (date) => {
@@ -81,10 +93,10 @@ export const timeTillBday = (date) => {
     if (date.getTime() > partyTime.getTime()) partyTime.setFullYear(year + 1);
     const dif = partyTime.getTime() - date.getTime();
     const difInDays = Math.ceil(dif / (1000 * 60 * 60 * 24));
-    if (difInDays === 0) return "It is my birthday today."
-    if (difInDays === 1) return `There are <span id="days">${difInDays}</span> day until my birthday on June 26th.`
-    return `There are <span id="days">${difInDays}</span> days until my birthday on June 26th.`
-}
+    if (difInDays === 0) return "It is my birthday today.";
+    if (difInDays === 1) return `There are <span id="days">${difInDays}</span> day until my birthday on June 26th.`;
+    return `There are <span id="days">${difInDays}</span> days until my birthday on June 26th.`;
+};
 
 export const getAge = () => {
     const date = new Date();
@@ -92,7 +104,7 @@ export const getAge = () => {
     const dif = date - birth;
     const years = Math.floor(dif / (1000 * 60 * 60 * 24 * 365));
     return years;
-}
+};
 
 export const getWeeks = () => {
     const date = new Date();
@@ -100,4 +112,12 @@ export const getWeeks = () => {
     const dif = date - start;
     const weeks = Math.floor(dif / (1000 * 60 * 60 * 24 * 7) - 1);
     return weeks;
-}
+};
+
+export const yearsMarried = () => {
+    const date = new Date();
+    const married = new Date(2003, 8, 6);
+    const dif = date - married;
+    const years = Math.floor(dif / (1000 * 60 * 60 * 24 * 365));
+    return years;
+};
