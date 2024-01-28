@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     data.list3.append(data.Bruno, data.Gizmo, data.Coco);
     data.list4.append(data.Volleyball, data.Programming);
     data.footer.append(data.footNav);
-    data.footNav.append(data.email, data.gitHub, data.linkedin, data.aatimes);
+    data.footNav.append(data.email, data.gitHub, data.linkedin, data.aatimes, data.dynamicMath);
     document.body.append(data.Sarah2, data.Leilani2, data.Harrison2, data.Kumiko2, data.Bruno2, data.Gizmo2, data.Coco2, data.Volleyball2, data.Programming2);
     data.Sarah2.append(data.SarahDivs[0], data.SarahDivs[1]);
     data.Leilani2.append(data.LeilaniDivs[0], data.LeilaniDivs[1]);
