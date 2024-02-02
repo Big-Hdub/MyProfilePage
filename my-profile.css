@@ -366,7 +366,8 @@ h1 {
         justify-content: end;
         margin: 0;
         background-position: 0 0;
-        gap: 10px;
+        gap: 30px;
+        align-items: center;
     }
 
     #Sarah0,
@@ -388,9 +389,9 @@ h1 {
     #Programming0,
     #Programming1 {
         background-color: unset;
-        width: 100%;
+        width: fit-content;
         height: fit-content;
-        position: relative;
+        position: static;
         border: unset;
         box-shadow: unset;
         margin: 0;
