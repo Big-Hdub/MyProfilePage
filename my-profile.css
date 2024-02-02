@@ -5,10 +5,9 @@
 
 body {
     margin: 0;
-    width: 100%;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
     background-image: url(./images/Alienware\ lockscreen.jpg);
     box-sizing: border-box;
     display: flex;
@@ -44,12 +43,6 @@ header {
     box-shadow: 3px 2px 5px 2px rgba(255, 0, 0, .3);
     box-sizing: border-box;
     justify-content: center;
-}
-
-#headerRight {
-    justify-content: left;
-    display: flex;
-    align-items: start;
 }
 
 #bio {
@@ -328,4 +321,87 @@ h1 {
 
 .footLinks {
     font-size: 31px;
+}
+
+@media (width < 1640px) {
+
+    .headerDivs {
+        height: fit-content;
+    }
+
+    #bio,
+    #clock {
+        font-size: x-large;
+    }
+
+    #hour,
+    #minute,
+    #second,
+    #days {
+        font-size: 30px;
+    }
+
+    #divMain {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .listTitles {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media (width < 1000px) {
+
+    header {
+        flex-direction: column-reverse;
+        height: fit-content;
+        align-items: center;
+    }
+
+    #headerRight,
+    #headerLeft {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+
+    #bio,
+    #clock {
+        font-size: medium;
+    }
+
+    #hour,
+    #minute,
+    #second,
+    #days {
+        font-size: 20px;
+    }
+
+    .listTitles {
+        font-size: medium;
+        padding-left: 0;
+        width: 90%;
+        /* overflow: scroll; */
+    }
+
+    .imageBoxes {
+        width: 100px;
+        height: 75px;
+    }
+
+    #footNav {
+        height: fit-content;
+    }
+
+    .footLinks {
+        font-size: medium;
+    }
+
+    /* footer {
+        height: 100%;
+    } */
 }
