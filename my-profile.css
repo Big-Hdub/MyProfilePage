@@ -360,13 +360,13 @@ h1 {
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         margin: 10px;
         background-size: 100%;
         justify-content: end;
-        /* gap: 30px; */
         margin: 0;
         background-position: 0 0;
+        gap: 10px;
     }
 
     #Sarah0,
@@ -395,60 +395,69 @@ h1 {
         box-shadow: unset;
         margin: 0;
         padding: 0;
-        padding-bottom: 100px;
         font-size: xx-large;
-        padding-bottom: 100px;
         padding-left: 20px;
         padding-right: 20px;
+        text-align: center;
     }
 
-}
-
-@media (width < 1000px) {
-
-    header {
-        flex-direction: column-reverse;
-        height: fit-content;
-        align-items: center;
+    #Sarah0,
+    #Leilani0,
+    #Harrison0,
+    #Kumiko0,
+    #Bruno0,
+    #Gizmo0,
+    #Coco0,
+    #Volleyball0,
+    #Programming0 {
+        padding-bottom: 100px;
     }
 
-    #headerRight,
-    #headerLeft {
-        display: flex;
-        justify-content: center;
-        width: 70%;
-    }
+    @media (width < 1000px) {
 
-    #bio,
-    #clock {
-        font-size: medium;
-    }
+        header {
+            flex-direction: column-reverse;
+            height: fit-content;
+            align-items: center;
+        }
 
-    #hour,
-    #minute,
-    #second,
-    #days {
-        font-size: 20px;
-    }
+        #headerRight,
+        #headerLeft {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+        }
 
-    .listTitles {
-        font-size: medium;
-        padding-left: 0;
-        width: 90%;
-        /* overflow: scroll; */
-    }
+        #bio,
+        #clock {
+            font-size: medium;
+        }
 
-    .imageBoxes {
-        width: 100px;
-        height: 75px;
-    }
+        #hour,
+        #minute,
+        #second,
+        #days {
+            font-size: 20px;
+        }
 
-    #footNav {
-        height: fit-content;
-    }
+        .listTitles {
+            font-size: medium;
+            padding-left: 0;
+            width: 90%;
+            /* overflow: scroll; */
+        }
 
-    .footLinks {
-        font-size: medium;
-    }
+        .imageBoxes {
+            width: 100px;
+            height: 75px;
+        }
 
-}
+        #footNav {
+            height: fit-content;
+        }
+
+        .footLinks {
+            font-size: medium;
+        }
+
+    }
