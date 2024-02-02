@@ -364,7 +364,7 @@ h1 {
         margin: 10px;
         background-size: 100%;
         justify-content: end;
-        gap: 30px;
+        /* gap: 30px; */
         margin: 0;
         background-position: 0 0;
     }
