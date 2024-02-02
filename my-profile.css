@@ -325,6 +325,11 @@ h1 {
 
 @media (width < 1640px) {
 
+    body {
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
     .headerDivs {
         height: fit-content;
     }
@@ -350,8 +355,15 @@ h1 {
     .listTitles {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding-right: 50px;
     }
 
+    .imageBoxes {
+        width: 200px;
+        height: 150px;
+    }
 
     .imageBoxes2 {
         display: flex;
@@ -414,52 +426,63 @@ h1 {
         padding-bottom: 100px;
     }
 
-    @media (width < 1000px) {
-
-        header {
-            flex-direction: column-reverse;
-            height: fit-content;
-            align-items: center;
-        }
-
-        #headerRight,
-        #headerLeft {
-            display: flex;
-            justify-content: center;
-            width: 70%;
-        }
-
-        #bio,
-        #clock {
-            font-size: medium;
-        }
-
-        #hour,
-        #minute,
-        #second,
-        #days {
-            font-size: 20px;
-        }
-
-        .listTitles {
-            font-size: medium;
-            padding-left: 0;
-            width: 90%;
-            /* overflow: scroll; */
-        }
-
-        .imageBoxes {
-            width: 100px;
-            height: 75px;
-        }
-
-        #footNav {
-            height: fit-content;
-        }
-
-        .footLinks {
-            font-size: medium;
-        }
-
+    #footNav {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .footLinks {
+        font-size: x-large;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        box-sizing: border-box;
+        height: fit-content;
+        width: 100%;
+    }
+}
+
+@media (width < 1000px) {
+
+    header {
+        flex-direction: column-reverse;
+        height: fit-content;
+        align-items: center;
+    }
+
+    #headerRight,
+    #headerLeft {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+
+    #bio,
+    #clock {
+        font-size: medium;
+    }
+
+    #hour,
+    #minute,
+    #second,
+    #days {
+        font-size: 20px;
+    }
+
+    .listTitles {
+        font-size: medium;
+        padding-left: 0;
+        width: 90%;
+    }
+
+    #footNav {
+        height: fit-content;
+    }
+
+    .footLinks {
+        font-size: medium;
+    }
+
 }
