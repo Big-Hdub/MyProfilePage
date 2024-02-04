@@ -55,4 +55,5 @@ export default {
     aatimes: cEl("a", [["class", "footLinks"], ["href", "https://hdubsaatimes.netlify.app"]], "AA Times project"),
     linkedin: cEl("a", [["class", "footLinks"], ["href", "https://www.linkedin.com/in/harry-wagner-7784a0123"]], "LinkedIn"),
     dynamicMath: cEl("a", [["class", "footLinks"], ["href", "https://dynamic-math-page.netlify.app"]], "dynamicMath"),
+    tictactoe: cEl("a", [["class", "footLinks"], ["href", "https://dubs-tictactoe.netlify.app"]], "TicTacToe"),
 }
