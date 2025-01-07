@@ -51,9 +51,9 @@ export default {
     footer: cEl("footer", [["class", "footer"]], ""),
     footNav: cEl("nav", [["id", "footNav"]], ""),
     gitHub: cEl("a", [["class", "footLinks"], ["href", "https://github.com/Big-Hdub"]], "GitHub"),
-    email: cEl("a", [["class", "footLinks"], ["href", "mailto:hdub-bb@hotmail.com"]], "E-mail"),
+    email: cEl("a", [["class", "footLinks"], ["href", "mailto:harrywagner-dev@outlook.com"]], "E-mail"),
     aatimes: cEl("a", [["class", "footLinks"], ["href", "https://hdubsaatimes.netlify.app"]], "AA Times project"),
-    linkedin: cEl("a", [["class", "footLinks"], ["href", "https://www.linkedin.com/in/harry-wagner-7784a0123"]], "LinkedIn"),
+    linkedin: cEl("a", [["class", "footLinks"], ["href", "https://www.linkedin.com/in/harrywagner-dev"]], "LinkedIn"),
     dynamicMath: cEl("a", [["class", "footLinks"], ["href", "https://dynamic-math-page.netlify.app"]], "dynamicMath"),
     tictactoe: cEl("a", [["class", "footLinks"], ["href", "https://dubs-tictactoe.netlify.app"]], "TicTacToe"),
 }
